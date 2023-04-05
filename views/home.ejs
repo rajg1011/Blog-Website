@@ -1,0 +1,24 @@
+<%- include("partial/header"); -%>
+
+<section id="data">
+    <div class="home">
+      <h1>Home</h1>
+      <p>
+        <%= item1 %>
+      </p>
+    </div>
+    <!-- //Look carefully at working of forEach. As every time when add data. It data but previous reain there. So we want that loop will not iterate from start. general i loop can also did the work but in Js array we mostly use ForEach -->
+   <% dataArray.forEach((obj)=>{  %>   
+    <div>
+      <h1><%= obj.title %></h1>
+      <p>
+         <%= obj.composeMessage.substring(0,200) %>...  <a href="/posts/<%= obj.title %>"> Read More</a>  <!--look how link is written -->
+      </p>        <!-- Here we just use <%= %> even when use .substring-->
+    </div>
+ <%  }) %>
+  </section>
+  <section id="btns">
+      <a href="/compose"><button type="button" class="btn btn-outline-primary">Add</button></a> 
+  </section>
+  <script src="js/home.js"></script>
+  <%- include("partial/footer"); -%>
