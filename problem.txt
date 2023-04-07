@@ -1,5 +1,3 @@
-footer problem. How to always get it into last
+
 in app,js in line 28 why not /compose instead of just / in post
 in copose line 23 set class
-
-dont go in other page when click on read more
