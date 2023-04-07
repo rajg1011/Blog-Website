@@ -38,7 +38,6 @@ app.post("/", (req, res) => {
 app.get("/posts/:headtitle", (req, res) => {    //To make dynamic links for webpages
   dataArray.forEach((ele) => {
     if (_.lowerCase(ele.title) == _.lowerCase(req.params.headtitle)) {       //lodash,lowerCase= all are in lower case now to make link in lowercase
-      console.log("Matched")
       res.render("partial/post", { upper: ele.title, lower: ele.composeMessage });
     }
   });
