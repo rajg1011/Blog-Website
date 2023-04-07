@@ -1,3 +1,12 @@
 
 in app,js in line 28 why not /compose instead of just / in post
 in copose line 23 set class
+
+How to set path... as in home.js code run with js/home.js while in case of post.ejs css path is ../css/style.css
+where will console.log() happen in home.js
+
+
+use getElementById bala video to know problem in one case
+
+
+Why footer is not working properly with post.ejs.. As we add data more then 100vh
